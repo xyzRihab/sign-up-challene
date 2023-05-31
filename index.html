@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <main id="main">
+      <div id="text">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>
+            <img src="./assets/images/icon-list.svg" /> Product discovery and
+            building what matters
+          </li>
+          <li>
+            <img src="./assets/images/icon-list.svg" /> Measuring to ensure
+            updates are a success
+          </li>
+          <li><img src="./assets/images/icon-list.svg" /> And much more!</li>
+        </ul>
+        <form>
+          <label for="email"
+            >Email address<span id="requiredError" class="error"
+              ><i>This field is required</i></span
+            ><span id="requiredEmail" class="error"
+              ><i>Valid email required</i></span
+            ></label
+          >
+          <input id="email" type="email" placeholder="email@company.com" />
+        </form>
+        <div id="button">
+          <h4>Subscribe to monthly newsletter</h4>
+        </div>
+      </div>
+      <img
+        id="signupImg"
+        src="./assets/images/illustration-sign-up-desktop.svg"
+      />
+    </main>
+
+    <div id="thanks">
+      <img src="./assets/images/icon-success.svg" />
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to <span id="emailEntered"></span>.
+        Please open it and click the button inside to confirm your subscription
+      </p>
+      <div id="button2" class="content">Dismiss message</div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
